@@ -8,7 +8,6 @@ from matplotlib import cm
 
 
 
-
 def draw_satellite_map(basemap_params, colored_attribute='orient'):
     '''
     Input:
@@ -27,6 +26,8 @@ def draw_satellite_map(basemap_params, colored_attribute='orient'):
         cmap = cm.get_cmap('hsv')  # cyclic colormap for angles
     elif colored_attribute == 'elevation':
         cmap = cm.get_cmap('Oranges')
+    else:
+        raise ValueError('Unknown color encoding attributes.')
 
 
 
@@ -70,13 +71,28 @@ def draw_satellite_map(basemap_params, colored_attribute='orient'):
                 lat_0=lat_0, lon_0=lon_0, projection=projection)
     m.bluemarble()
 
+
     # 初始画图
+
+    # 全体位置
     x, y = m(all_lon, all_lat)
+    # 全体方位
+
+
+    all_velocity = [station.ITRF_position_velocity_error(t)[1] \
+        for station in all_stations]
+    all_orient = [np.mod(np.rad2deg(np.angle(v[0] + v[1]*1j)) - 90, 360) \
+        for v in all_velocity]
+    if colored_attribute == 'orient':
+        all_color_value = [orient/360 for orient in all_orient]
+    elif colored_attribute == 'elevation':
+        all_color_value = (all_ele - np.nanmin(all_ele)) / (np.nanmax(all_ele) - np.nanmin(all_ele))
+
+
     scat = []
     for i in range(len(x)):
-        satellite_velocity = all_stations[i].ITRF_position_velocity_error(t)[1]
-        satellite_orient = np.mod(np.rad2deg(np.angle(satellite_velocity[0] + satellite_velocity[1]*1j)) - 90, 360)
-        scat.append(m.scatter(x[i], y[i], marker=(3, 0, satellite_orient), color=cmap(satellite_orient/360)))
+        scat.append(m.scatter(x[i], y[i], marker=(3, 0, all_orient[i]),
+                    color=cmap(all_color_value[i])))
 
 
     '''内嵌的函数init, update 用于动画'''
@@ -98,12 +114,18 @@ def draw_satellite_map(basemap_params, colored_attribute='orient'):
         all_ele = vecfun_ele(all_subpoint)
 
         x, y = m(all_lon, all_lat)
+        all_velocity = [station.ITRF_position_velocity_error(t)[1] \
+            for station in all_stations]
+        all_orient = [np.mod(np.rad2deg(np.angle(v[0] + v[1]*1j)) - 90, 360) \
+            for v in all_velocity]
+        if colored_attribute == 'orient':
+            all_color_value = [orient/360 for orient in all_orient]
+        elif colored_attribute == 'elevation':
+            all_color_value = (all_ele - np.nanmin(all_ele)) / (np.nanmax(all_ele) - np.nanmin(all_ele))
 
         scat = []
         for i in range(len(x)):
-            satellite_velocity = all_stations[i].ITRF_position_velocity_error(t)[1]
-            satellite_orient = np.mod(np.rad2deg(np.angle(satellite_velocity[0] + satellite_velocity[1]*1j)) - 90, 360)
-            scat.append(m.scatter(x[i], y[i], marker=(3, 0, satellite_orient), color=cmap(satellite_orient/360)))
+            scat.append(m.scatter(x[i], y[i], marker=(3, 0, all_orient[i]), color=cmap(all_color_value[i])))
 
         # scat = m.scatter(x, y, marker=(3, 0, 40), zorder=10, color=[0.2,0.2,0.9])
         # sate_text = plt.text(x+8, y-8, all_stations_names, color=[0.9,0.2,0.2])
@@ -118,6 +140,7 @@ def draw_satellite_map(basemap_params, colored_attribute='orient'):
     plt.show()
 
 
+
 if __name__ == '__main__':
 
     basemap_params = {
@@ -130,5 +153,11 @@ if __name__ == '__main__':
         'lon_0': None
     }
 
-    draw_satellite_map(basemap_params)
+
+    basemap_params['projection'] = 'cyl'
+    basemap_params['lat_0'] = 0
+    basemap_params['lon_0'] = 90
+
+    draw_satellite_map(basemap_params=basemap_params,
+                        colored_attribute='elevation')
 

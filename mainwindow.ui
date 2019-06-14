@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>LookUp2TheStars</class>
+ <widget class="QMainWindow" name="LookUp2TheStars">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>仰望</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="tools2D">
@@ -57,16 +57,6 @@
       <y>10</y>
       <width>256</width>
       <height>192</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QGraphicsView" name="preview3D">
-    <property name="geometry">
-     <rect>
-      <x>285</x>
-      <y>10</y>
-      <width>861</width>
-      <height>521</height>
      </rect>
     </property>
    </widget>
@@ -128,6 +118,19 @@
       </rect>
      </property>
     </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> 显示地球</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="resetBtn">
     <property name="geometry">
@@ -141,6 +144,17 @@
     <property name="text">
      <string>清空结果</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>861</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
