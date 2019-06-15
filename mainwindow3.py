@@ -202,7 +202,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "仰望"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "仰望 V1.0"))
         self.tools2D.setTitle(_translate("MainWindow", "二维图选项"))
         self.fullScreenBtn.setText(_translate("MainWindow", "全屏展示二维图"))
         self.alignmentLinesCheckBox.setText(_translate("MainWindow", "银河坐标系"))
@@ -329,7 +329,12 @@ class Ui_MainWindow(object):
     def searchStar(self, starIndex, database):
         description = Utils.searchStarByName(starIndex, database)
         if description is not None:
-            self.closestStarTextBrowser.setText(str(description))
+            res = ''
+            dic = description
+            if dic is not None:
+                for k in dic:
+                    res += k + ': ' + dic[k] + '\n'
+            self.closestStarTextBrowser.setText(res)
         else:
             self.closestStarTextBrowser.setText('Sorry, no starts can be found due to unknown reasons.')
         # self.closestStarTextBrowser.moveCursor(self.closestStarTextBrowser.textCursor().End)

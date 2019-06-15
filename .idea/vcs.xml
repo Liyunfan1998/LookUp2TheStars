@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/QSS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/QssUI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/qss-dracula" vcs="Git" />
   </component>
 </project>

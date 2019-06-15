@@ -2,22 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a9ac93-3d8d-41e2-8d45-1f3d0eae9293" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2dfullscreenwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullscreenwindow2D.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mpl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vtkDemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vtkPart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2dfullscreenwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2dfullscreenwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/2dfullscreenwindow.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hip_small.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hip_small.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/satellite_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/satellite_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_1_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_1_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_1_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_1_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_2_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_2_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_2_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_2_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_3_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_3_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_3_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_3_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_4_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_4_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Equatorial_4_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Equatorial_4_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_1_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_1_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_1_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_1_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_2_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_2_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_2_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_2_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_3_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_3_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_3_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_3_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_4_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_4_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BSC_Galactic_4_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/BSC_Galactic_4_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_1_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_1_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_1_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_1_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_2_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_2_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_2_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_2_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_3_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_3_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_3_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_3_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_4_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_4_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Equatorial_4_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Equatorial_4_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_1_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_1_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_1_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_1_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_2_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_2_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_2_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_2_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_3_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_3_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_3_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_3_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_4_off.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_4_off.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Hipparcos_Galactic_4_on.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/Hipparcos_Galactic_4_on.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fullscreenwindow2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/fullscreenwindow2D.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainLogic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/mainwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$用户界面.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainwindow3.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,15 +48,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/LookUp2TheStars$mainLogic.coverage" NAME="mainLogic Coverage Results" MODIFIED="1560483266129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LookUp2TheStars$mainLogic.coverage" NAME="mainLogic Coverage Results" MODIFIED="1560499199331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainLogic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+            <state relative-caret-position="122">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#90#108#0" expanded="true" />
               </folding>
@@ -43,10 +65,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainwindow.py">
+        <entry file="file://$PROJECT_DIR$/mainwindow3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="75" />
+            <state relative-caret-position="-225">
+              <caret line="204" column="63" selection-start-line="204" selection-start-column="63" selection-end-line="204" selection-end-column="63" />
+              <folding>
+                <element signature="e#199#241#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/vtkDemo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="131">
-              <caret line="266" column="18" lean-forward="true" selection-start-line="266" selection-start-column="18" selection-end-line="266" selection-end-column="18" />
+              <caret line="266" column="18" selection-start-line="266" selection-start-column="18" selection-end-line="266" selection-end-column="18" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -63,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fullscreenwindow2D.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="303" column="78" lean-forward="true" selection-start-line="303" selection-start-column="78" selection-end-line="303" selection-end-column="78" />
+            <state relative-caret-position="145">
+              <caret line="157" column="68" selection-start-line="157" selection-start-column="68" selection-end-line="157" selection-end-column="68" />
               <folding>
                 <element signature="e#207#249#0" expanded="true" />
                 <element signature="e#13533#13731#0" />
@@ -77,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            <state relative-caret-position="39">
+              <caret line="135" column="39" selection-start-line="135" selection-start-column="39" selection-end-line="135" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -100,12 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mainwindow</find>
-      <find>align</find>
-      <find>globeSpin</find>
-      <find>0.1</find>
-      <find>black</find>
-      <find>pu</find>
       <find>SetColor</find>
       <find>c_b</find>
       <find>celestial_sphere</find>
@@ -122,7 +141,6 @@
       <find>group</find>
       <find>edit</find>
       <find>show</find>
-      <find>super</find>
       <find>calcLongLatByXY</find>
       <find>find</find>
       <find>search</find>
@@ -130,6 +148,13 @@
       <find>btn</find>
       <find>findStarBtn</find>
       <find>zoom</find>
+      <find>str</find>
+      <find>ui_style</find>
+      <find>, QtCore.Qt.white</find>
+      <find>close</find>
+      <find>super</find>
+      <find>changeDataset</find>
+      <find>sorry</find>
     </findStrings>
     <replaceStrings>
       <replace>axis</replace>
@@ -151,10 +176,10 @@
         <option value="$PROJECT_DIR$/mpl.py" />
         <option value="$PROJECT_DIR$/vtkDemo.py" />
         <option value="$PROJECT_DIR$/data/mpl-save.py" />
+        <option value="$PROJECT_DIR$/Utils.py" />
         <option value="$PROJECT_DIR$/mainLogic.py" />
         <option value="$PROJECT_DIR$/mainwindow3.py" />
         <option value="$PROJECT_DIR$/fullscreenwindow2D.py" />
-        <option value="$PROJECT_DIR$/Utils.py" />
       </list>
     </option>
   </component>
@@ -250,12 +275,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560407916793</updated>
       <workItem from="1560407918986" duration="150000" />
-      <workItem from="1560408221329" duration="41685000" />
+      <workItem from="1560408221329" duration="50388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41835000" />
+    <option name="totallyTimeSpent" value="50538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1231" height="777" extended-state="0" />
@@ -266,7 +291,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329927" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -323,9 +348,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mainwindow3.py</url>
-          <line>175</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/mainLogic.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -433,16 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainLogic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="e#90#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/2dfullscreenwindow.ui">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -453,6 +468,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vtkDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="266" column="18" selection-start-line="266" selection-start-column="18" selection-end-line="266" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mainwindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -460,44 +485,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/QSS/ElegantDark.qss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QssUI/StyleSheets/MetroUI.qss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="135" column="39" selection-start-line="135" selection-start-column="39" selection-end-line="135" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainLogic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#90#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mainwindow3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1982">
-          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        <state relative-caret-position="-225">
+          <caret line="204" column="63" selection-start-line="204" selection-start-column="63" selection-end-line="204" selection-end-column="63" />
           <folding>
             <element signature="e#199#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vtkDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="266" column="18" lean-forward="true" selection-start-line="266" selection-start-column="18" selection-end-line="266" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fullscreenwindow2D.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="303" column="78" lean-forward="true" selection-start-line="303" selection-start-column="78" selection-end-line="303" selection-end-column="78" />
+        <state relative-caret-position="145">
+          <caret line="157" column="68" selection-start-line="157" selection-start-column="68" selection-end-line="157" selection-end-column="68" />
           <folding>
             <element signature="e#207#249#0" expanded="true" />
             <element signature="e#13533#13731#0" />
             <element signature="e#14837#15558#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

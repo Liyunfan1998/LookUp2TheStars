@@ -155,7 +155,7 @@ class Ui_MainWindow2D(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "仰望-全屏二维图"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "仰望 V1.0 -全屏二维图"))
         self.tools2D.setTitle(_translate("MainWindow", "二维图选项"))
         self.allScreenBtn.setText(_translate("MainWindow", "回到主界面"))
         self.alignmentLinesCheckBox.setText(_translate("MainWindow", "银河坐标系"))
@@ -222,6 +222,8 @@ class Ui_MainWindow2D(object):
 
         self.zoomBtn.clicked.connect(self.zoomPic)
         self.deZoomBtn.clicked.connect(self.deZoomPic)
+
+        self.allScreenBtn.clicked.connect(self.closeWindow)
 
         self.superChange2D()
 
@@ -300,11 +302,19 @@ class Ui_MainWindow2D(object):
         print(self.picW * self.zoomscale, self.picH * self.zoomscale)
         # Utils.searchCloestStar(x * 2, y * 2, 0, self.dataset)
         """
-        self.mouseXYTextEdit.setText(str(self.x) + ', ' + str(self.y))
-        self.x, self.y = Utils.calcLongLatByXY(self.x, self.y, self.zoomscale)
+        self.x, self.y = self.changeXY(self.x, self.y)
+        self.mouseXYTextEdit.setText(str(round(self.x,2)) + ', ' + str(round(self.y,2)))
+        # self.x, self.y = Utils.calcLongLatByXY(self.x, self.y, self.zoomscale)
         dic = Utils.searchCloestStar(self.x, self.y, self.zoomscale, self.dataset)
+        # self.closestStarTextBrowser.setText(str(dic))
 
-        self.closestStarTextBrowser.setText(str(dic))
+        res = ''
+        if dic is not None:
+            for k in dic:
+                res += k + ': ' + dic[k] + '\n'
+        else:
+            res = 'Sorry, no starts can be found due to unknown reasons.'
+        self.closestStarTextBrowser.setText(res)
 
     def shortCuts(self):
         self.shc_s = QtWidgets.QShortcut(QtGui.QKeySequence.mnemonic("&S"), self)
@@ -348,6 +358,13 @@ class Ui_MainWindow2D(object):
             self.coordinate = 'Galactic' if self.coordinate else 'Equatorial'
         self.showPic()
 
+    def closeWindow(self):
+        self.MainWindow.close()
+
+    def changeXY(self, x, y):
+        a = x / 150 * 36
+        b = 90 - 18 * y / 80
+        return a, b
 
 """
         # # 当需要组合键时，要很多种方式，这里举例为“shift+单个按键”，也可以采用shortcut、或者pressSequence的方法。
