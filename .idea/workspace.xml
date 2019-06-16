@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a9ac93-3d8d-41e2-8d45-1f3d0eae9293" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2dfullscreenwindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/024.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/3d.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Galactic.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/equatorial.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/final.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mainwindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mpl-4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/satellite_visualization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/ISS (ZARYA).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/ISS (ZARYA)_arctic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/all_station.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/great_circles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/orbits_model.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/stations_ele.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/stations_inc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/展示素材/stations_moving.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.pyproject" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.pyproject.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainwindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainwindow2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vtkPart.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/用户界面.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/仰望-doc.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainLogic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="234">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#90#108#0" expanded="true" />
@@ -66,11 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vtkDemo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="10" />
+            <state relative-caret-position="195">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fullscreenwindow2D.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="2041">
               <caret line="157" column="68" selection-start-line="157" selection-start-column="68" selection-end-line="157" selection-end-column="68" />
               <folding>
                 <element signature="e#207#249#0" expanded="true" />
@@ -90,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1729">
+            <state relative-caret-position="1755">
               <caret line="135" column="39" selection-start-line="135" selection-start-column="39" selection-end-line="135" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -261,12 +237,12 @@
       <updated>1560407916793</updated>
       <workItem from="1560407918986" duration="150000" />
       <workItem from="1560408221329" duration="50388000" />
-      <workItem from="1560665245044" duration="1101000" />
+      <workItem from="1560665245044" duration="1603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51639000" />
+    <option name="totallyTimeSpent" value="52141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1231" height="777" extended-state="0" />
@@ -455,19 +431,19 @@
     <entry file="file://$PROJECT_DIR$/data/QssUI/StyleSheets/MetroUI.qss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainLogic.py">
+    <entry file="file://$PROJECT_DIR$/fullscreenwindow2D.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="2041">
+          <caret line="157" column="68" selection-start-line="157" selection-start-column="68" selection-end-line="157" selection-end-column="68" />
           <folding>
-            <element signature="e#90#108#0" expanded="true" />
+            <element signature="e#207#249#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
+        <state relative-caret-position="1755">
           <caret line="135" column="39" selection-start-line="135" selection-start-column="39" selection-end-line="135" selection-end-column="39" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -475,12 +451,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fullscreenwindow2D.py">
+    <entry file="file://$PROJECT_DIR$/vtkDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="157" column="68" selection-start-line="157" selection-start-column="68" selection-end-line="157" selection-end-column="68" />
+        <state relative-caret-position="195">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
-            <element signature="e#207#249#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -495,10 +471,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vtkDemo.py">
+    <entry file="file://$PROJECT_DIR$/mainLogic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="10" />
+        <state relative-caret-position="234">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#90#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
