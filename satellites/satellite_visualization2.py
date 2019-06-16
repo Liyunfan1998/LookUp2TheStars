@@ -1,0 +1,166 @@
+from skyfield.api import Topos, load
+from skyfield.api import Loader
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from mpl_toolkits.basemap import Basemap
+from matplotlib import cm
+
+
+
+def draw_satellite_map(basemap_params, colored_attribute='orient'):
+    '''
+    Input:
+    basemap_params: <dict> 'basemap parameter': value
+    colored_attribute: 'orient''elevation', which attributes to be used in colormap
+    '''
+    llcrnrlon = basemap_params.get('llcrnrlon')
+    llcrnrlat = basemap_params.get('llcrnrlat')
+    urcrnrlon = basemap_params.get('urcrnrlon')
+    urcrnrlat = basemap_params.get('urcrnrlat')
+    projection = basemap_params.get('projection', 'cyl')
+    lat_0 = basemap_params.get('lat_0')
+    lon_0 = basemap_params.get('lon_0')
+
+    if colored_attribute == 'orient':
+        cmap = cm.get_cmap('hsv')  # cyclic colormap for angles
+    elif colored_attribute == 'elevation':
+        cmap = cm.get_cmap('Oranges')
+    else:
+        raise ValueError('Unknown color encoding attributes.')
+
+
+
+    ## 从网络导入空间站数据
+    from skyfield.api import Topos, load
+    stations_url = 'http://celestrak.com/NORAD/elements/stations.txt'
+    satellites = load.tle(stations_url)
+    satellite = satellites['ISS (ZARYA)']
+
+
+    load = Loader(directory='.', expire=False)
+    # expire=False: use local files
+    ts = load.timescale()
+    hours = np.arange(0, 3, 0.01)
+    time = ts.utc(2019, 6, 13, hours)
+
+
+    all_stations_names = list(satellites.keys())
+    all_stations = list(satellites.values())
+
+    # 获取卫星的初始位置
+    t = time[0]
+
+    all_geocentric = [sate.at(t) for sate in all_stations] 
+
+
+    # 避免不停地写list的向量运算np.vectorize一切, 我们
+    vecfun_subpoint = np.vectorize(lambda x: x.subpoint())
+    vecfun_lon = np.vectorize(lambda x: x.longitude.degrees)
+    vecfun_lat = np.vectorize(lambda x: x.latitude.degrees)
+    vecfun_ele = np.vectorize(lambda x: x.elevation.m)
+
+
+    all_subpoint = vecfun_subpoint(all_geocentric)
+    all_lon = vecfun_lon(all_subpoint)
+    all_lat = vecfun_lat(all_subpoint)
+    all_ele = vecfun_ele(all_subpoint)
+
+
+    # 初始化画布
+    fig, ax = plt.subplots(figsize=(8,8))
+
+    m = Basemap(llcrnrlon=llcrnrlon, llcrnrlat=llcrnrlat, urcrnrlon=urcrnrlon, urcrnrlat=urcrnrlat,
+                lat_0=lat_0, lon_0=lon_0, projection=projection)
+    m.bluemarble()
+
+
+    # 初始画图
+
+    # 全体位置
+    x, y = m(all_lon, all_lat)
+    # 全体方位
+
+
+    all_velocity = [station.ITRF_position_velocity_error(t)[1] \
+        for station in all_stations]
+    all_orient = [np.mod(np.rad2deg(np.angle(v[0] + v[1]*1j)) - 90, 360) \
+        for v in all_velocity]
+    if colored_attribute == 'orient':
+        all_color_value = [orient/360 for orient in all_orient]
+    elif colored_attribute == 'elevation':
+        all_color_value = (all_ele - np.nanmin(all_ele)) / (np.nanmax(all_ele) - np.nanmin(all_ele))
+
+
+    scat = []
+    for i in range(len(x)):
+        scat.append(m.scatter(x[i], y[i], marker=(3, 0, all_orient[i]),
+                    color=cmap(all_color_value[i])))
+
+
+    '''内嵌的函数init, update 用于动画'''
+    def init():
+        # return scat,
+        # return scat,sate_text
+        return scat
+
+
+    def update(frame):
+        t = time[frame]
+        all_geocentric = [sate.at(t) for sate in all_stations]
+
+        all_subpoint = vecfun_subpoint(all_geocentric)
+
+        all_subpoint = vecfun_subpoint(all_geocentric)
+        all_lon = vecfun_lon(all_subpoint)
+        all_lat = vecfun_lat(all_subpoint)
+        all_ele = vecfun_ele(all_subpoint)
+
+        x, y = m(all_lon, all_lat)
+        all_velocity = [station.ITRF_position_velocity_error(t)[1] \
+            for station in all_stations]
+        all_orient = [np.mod(np.rad2deg(np.angle(v[0] + v[1]*1j)) - 90, 360) \
+            for v in all_velocity]
+        if colored_attribute == 'orient':
+            all_color_value = [orient/360 for orient in all_orient]
+        elif colored_attribute == 'elevation':
+            all_color_value = (all_ele - np.nanmin(all_ele)) / (np.nanmax(all_ele) - np.nanmin(all_ele))
+
+        scat = []
+        for i in range(len(x)):
+            scat.append(m.scatter(x[i], y[i], marker=(3, 0, all_orient[i]), color=cmap(all_color_value[i])))
+
+        # scat = m.scatter(x, y, marker=(3, 0, 40), zorder=10, color=[0.2,0.2,0.9])
+        # sate_text = plt.text(x+8, y-8, all_stations_names, color=[0.9,0.2,0.2])
+
+        # return scat,
+        # return scat,sate_text
+        return scat
+
+
+    ani = FuncAnimation(fig, update, frames=np.arange(len(hours)),
+                    init_func=init, blit=True, interval=200)
+    plt.show()
+
+
+
+if __name__ == '__main__':
+
+    basemap_params = {
+        'llcrnrlon': None,
+        'llcrnrlat': None,
+        'urcrnrlon': None,
+        'urcrnrlat': None,
+        'projection': 'cyl',
+        'lat_0': None,
+        'lon_0': None
+    }
+
+
+    basemap_params['projection'] = 'cyl'
+    # basemap_params['lat_0'] = 0
+    # basemap_params['lon_0'] = 90
+
+    draw_satellite_map(basemap_params=basemap_params,
+                        colored_attribute='elevation')
+

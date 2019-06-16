@@ -1,0 +1,7 @@
+python3.7 (under conda/or not)
+cv2
+numpy
+pandas
+vtk
+pyqt5
+matplotlib
